@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Environment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.ActionMode;
 import android.view.Menu;
@@ -54,6 +55,8 @@ public abstract class BasePicker extends AppCompatActivity implements IPermissio
 
     protected void init()
     {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         selectedDirectories = new ArrayList<>();
 
         navFolderButtons = new ArrayList<>();
