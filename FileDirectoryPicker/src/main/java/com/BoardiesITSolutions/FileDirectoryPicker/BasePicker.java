@@ -332,7 +332,7 @@ public abstract class BasePicker extends AppCompatActivity implements IPermissio
         if (pickerMode == PickerMode.DirectoryPicker
                 || pickerMode == PickerMode.SaveFileDialog)
         {
-            getMenuInflater().inflate(R.menu.main_menu, menu);
+            getMenuInflater().inflate(R.menu.file_picker_menu, menu);
         }
         return true;
     }
