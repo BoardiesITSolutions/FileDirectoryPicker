@@ -32,6 +32,8 @@ The first thing to do is to add the project to your apps gradle.build file. Add 
 **tag** is the tagged version name on GitHub.
 
 ```
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
     implementation com.github.BoardiesITSolutions:FileDirectoryPicker:tag
 ```
 
