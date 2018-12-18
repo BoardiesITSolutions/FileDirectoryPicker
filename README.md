@@ -11,6 +11,8 @@ returned back to your app which you can then use to read/write files on the user
 * Open File Selection
 * Automatic permission handling (where applicable - see below)
 
+Supports Android API Level 17 (Jelly Bean 4.2) and upwards
+
 |![Directory Picker](screenshots/dir_picker.png)|![Selection](screenshots/selection.png)|![Save File](screenshots/save_file.png)|
 |---|---|---|
 
@@ -137,3 +139,8 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data)
     }
 }
 ```
+
+# Automatic Permission Handling
+The library will automatically request SD card permissions for Marshmallow and up. Although the library does, and the permission approval will also be valid for your own app but you should still check the permission yourself in case the user has revoked permissions later on. 
+
+You should only need to check the permission when you need to access the SD card without first having to use one of the library pickers - you do not need to request permission yourself before starting one of the activities. 
