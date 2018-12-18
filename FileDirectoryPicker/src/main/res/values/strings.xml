@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Library</string>
+    <string name="title_activity_directory_picker">DirectoryPicker</string>
+    <string name="title_activity_create_directory">Create Directory</string>
+    <string name="directory_name">Directory Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="please_enter_directory_name">Please enter a directory name</string>
+    <string name="successfully_created_directory">Successfully created directory</string>
+    <string name="ok">OK</string>
+    <string name="delete">Delete</string>
+    <string name="choose_directory">Choose Directory</string>
+    <string name="rename">Rename</string>
+    <string name="please_enter_a_file_directory_name">Please enter a file/directory name</string>
+    <string name="file_directory_name_hasnt_been_changed">File/directory name hasn\'t been changed</string>
+    <string name="choose_file">Choose File</string>
+    <string name="save_file">Save File</string>
+    <string name="done">Done</string>
+    <string name="please_specify_a_file_name">Please specify a file name</string>
+    <string name="create_directory">Create Directory</string>
+
+    <color name="bitsColourHeading">#d90000</color>
+    <color name="appPrimaryColour">#d90000</color>
+    <color name="appPrimaryColourDark">#a20000</color>
+    <color name="appPrimaryColourDarkTransparent">#80a20000</color>
+    <color name="defaultButtonSelectorToogleSelected">#a4a4a4</color>
+    <color name="defaultButtonSelectorToggleUnselected">#dddddd</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+</resources>
