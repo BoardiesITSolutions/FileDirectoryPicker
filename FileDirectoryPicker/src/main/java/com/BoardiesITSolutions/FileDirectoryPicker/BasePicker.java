@@ -366,7 +366,6 @@ public abstract class BasePicker extends AppCompatActivity implements IPermissio
 
     private void returnSaveFile()
     {
-        Toast.makeText(BasePicker.this, "Saving file", Toast.LENGTH_SHORT).show();
         EditText txtFileName = findViewById(R.id.txtFileName);
         if (txtFileName.getText().toString().length() == 0)
         {

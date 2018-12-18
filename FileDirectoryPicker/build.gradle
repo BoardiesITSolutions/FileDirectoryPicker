@@ -21,7 +21,7 @@ else
 }
 
 archivesBaseName="FileDirectoryPicker"
-version '1.0'
+version '1.0.0.0'
 group 'com.BoardiesITSolutions'
 
 android {
@@ -30,7 +30,7 @@ android {
         minSdkVersion 17
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0.0"
     }
     buildTypes {
         release {
