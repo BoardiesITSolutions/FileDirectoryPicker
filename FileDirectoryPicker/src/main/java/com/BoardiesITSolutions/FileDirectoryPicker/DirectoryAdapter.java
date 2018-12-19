@@ -56,7 +56,7 @@ public class DirectoryAdapter extends BaseAdapter
             textView.setTypeface(null, Typeface.BOLD);
             if (getItem(position).isSelected())
             {
-                convertView.setBackgroundResource(R.color.appPrimaryColour);
+                convertView.setBackgroundResource(R.color.colorPrimary);
             }
             if (directoryOrFileInfo.isDirectory())
             {

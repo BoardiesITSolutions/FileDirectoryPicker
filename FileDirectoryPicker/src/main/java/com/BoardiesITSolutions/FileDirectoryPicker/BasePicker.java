@@ -90,7 +90,7 @@ public abstract class BasePicker extends AppCompatActivity implements IPermissio
 
                     gridView.getChildAt(position).setSelected(true);
                     directoryAdapter.getItem(position).setSelected(true);
-                    gridView.getChildAt(position).setBackgroundResource(R.color.appPrimaryColour);
+                    gridView.getChildAt(position).setBackgroundResource(R.color.colorPrimary);
 
                     selectedDirectories.add(directoryAdapter.getItem(position));
 

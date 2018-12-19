@@ -13,6 +13,9 @@ returned back to your app which you can then use to read/write files on the user
 
 Supports Android API Level 17 (Jelly Bean 4.2) and upwards
 
+**Note that you need to have colorPrimary set to be your main branding colour in order
+for the library to show the selections in your branding colour.**
+
 |![Directory Picker](screenshots/dir_picker.png)|![Selection](screenshots/selection.png)|![Save File](screenshots/save_file.png)|
 |---|---|---|
 

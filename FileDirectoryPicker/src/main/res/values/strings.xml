@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Library</string>
     <string name="title_activity_directory_picker">DirectoryPicker</string>
     <string name="title_activity_create_directory">Create Directory</string>
     <string name="directory_name">Directory Name</string>
@@ -20,13 +19,8 @@
     <string name="done">Done</string>
     <string name="please_specify_a_file_name">Please specify a file name</string>
     <string name="create_directory">Create Directory</string>
-
-    <color name="bitsColourHeading">#d90000</color>
-    <color name="appPrimaryColour">#d90000</color>
-    <color name="appPrimaryColourDark">#a20000</color>
-    <color name="appPrimaryColourDarkTransparent">#80a20000</color>
-    <color name="defaultButtonSelectorToogleSelected">#a4a4a4</color>
-    <color name="defaultButtonSelectorToggleUnselected">#dddddd</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+    <color name="colorPrimary"></color>
+    <color name="colorPrimaryDark"></color>
 </resources>
