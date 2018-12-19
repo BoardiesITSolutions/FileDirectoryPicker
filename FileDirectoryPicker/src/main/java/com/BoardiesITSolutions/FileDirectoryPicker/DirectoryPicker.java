@@ -1,6 +1,7 @@
 package com.BoardiesITSolutions.FileDirectoryPicker;
 
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 
 public class DirectoryPicker extends BasePicker
 {
@@ -10,6 +11,9 @@ public class DirectoryPicker extends BasePicker
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.directory_picker);
+
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         pickerMode = PickerMode.DirectoryPicker;
 

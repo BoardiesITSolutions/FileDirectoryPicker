@@ -3,5 +3,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <include layout="@layout/picker_base_layout" />
+    <include layout="@layout/toolbar" />
+    <include layout="@layout/picker_base_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"/>
+
 </LinearLayout>

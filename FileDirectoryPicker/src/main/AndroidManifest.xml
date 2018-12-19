@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity android:name=".DirectoryPicker"
+            android:theme="@style/FilePickerTheme"
             android:label="@string/choose_directory"/>
         <activity android:name=".CreateDirectory"
             android:theme="@style/Theme.AppCompat.Light.Dialog"
@@ -17,8 +18,10 @@
             android:theme="@style/Theme.AppCompat.Light.Dialog"
             android:label="@string/rename"/>
         <activity android:name=".OpenFilePicker"
+            android:theme="@style/FilePickerTheme"
             android:label="@string/choose_file"/>
         <activity android:name=".SaveFilePicker"
+            android:theme="@style/FilePickerTheme"
             android:label="@string/save_file" />
     </application>
 </manifest>

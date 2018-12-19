@@ -55,8 +55,7 @@ public abstract class BasePicker extends AppCompatActivity implements IPermissio
 
     protected void init()
     {
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
         selectedDirectories = new ArrayList<>();
 
         navFolderButtons = new ArrayList<>();
