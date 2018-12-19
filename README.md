@@ -1,3 +1,4 @@
+[![](https://jitpack.io/v/BoardiesITSolutions/FileDirectoryPicker.svg)](https://jitpack.io/#BoardiesITSolutions/FileDirectoryPicker)
 # Introduction
 FileDirectoryPicker is a simple to use library which, as you probably guessed, allows you to provide
 a user interface to the user to allow them to select a directory or file. This path is then
