@@ -6,7 +6,7 @@ buildscript {
         }
     }
     dependencies {
-        'com.android.tools.build:gradle:2.3.0'
+        'com.android.tools.build:gradle:3.4.0'
     }
 }
 
