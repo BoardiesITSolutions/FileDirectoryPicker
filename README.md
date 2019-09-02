@@ -75,7 +75,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data)
 {
     switch (requestCode)
     {
-        case MainActivity.REQUEST_FILE_DIRECTORY_PICKER:
+        case MainActivity.REQUEST_DIRECTORY_PICKER:
         if (resultCode == Activity.RESULT_OK)
         {
             String currentPath = data.getStringExtra(DirectoryPicker.BUNDLE_CHOSEN_DIRECTORY);
@@ -93,7 +93,7 @@ Create the intent and start the activity
 private static final int REQUEST_OPEN_FILE_DIALOG = 1;
 
 //Create the intent and start the activity
-Intent intent = new Intent(this, DirectoryPicker.class);
+Intent intent = new Intent(this, OpenFilePicker.class);
 startActivityForResult(intent, REQUEST_OPEN_FILE_DIALOG);
 ```
 
@@ -104,7 +104,7 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data)
 {
     switch (requestCode)
     {
-        case MainActivity.REQUEST_FILE_DIRECTORY_PICKER:
+        case MainActivity.REQUEST_OPEN_FILE_DIALOG:
         if (resultCode == Activity.RESULT_OK)
         {
             String selectedFile = data.getStringExtra(DirectoryPicker.BUNDLE_SELECTED_FILE);
