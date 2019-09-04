@@ -165,3 +165,5 @@ manifest. This will only be valid until the next major android release so this s
     android:requestLegacyExternalStorage="true"
 </application>
 ```
+
+For more information see https://developer.android.com/training/data-storage/files/external-scoped
