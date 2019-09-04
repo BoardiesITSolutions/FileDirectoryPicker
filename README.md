@@ -40,7 +40,7 @@ The first thing to do is to add the project to your apps gradle.build file. Add 
 ```
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
-    implementation com.github.BoardiesITSolutions:FileDirectoryPicker:tag
+    implementation 'com.github.BoardiesITSolutions:FileDirectoryPicker:tag'
 ```
 
 In your Android projects manifest file add the following permissions:
