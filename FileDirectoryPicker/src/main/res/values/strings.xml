@@ -23,4 +23,5 @@
     <color name="black">#000000</color>
     <color name="colorPrimary"></color>
     <color name="colorPrimaryDark"></color>
+    <color name="colorAccent"></color>
 </resources>
