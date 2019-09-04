@@ -133,10 +133,11 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data)
 {
     switch (requestCode)
     {
-        case MainActivity.REQUEST_FILE_DIRECTORY_PICKER:
+        case MainActivity.REQUEST_SAVE_FILE_DIALOG:
         if (resultCode == Activity.RESULT_OK)
         {
-            String selectedFile = data.getStringExtra(DirectoryPicker.BUNDLE_SAVE_PATH);
+            String selectedPath = data.getStringExtra(SaveFilePicker.BUNDLE_SAVE_PATH);
+            String selectedFile = data.getStringExtra(SaveFilePicker.BUNDLE_SAVE_FILE);
             //Save file at location
         }
         break;
@@ -148,3 +149,19 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data)
 The library will automatically request SD card permissions for Marshmallow and up. Although the library does, and the permission approval will also be valid for your own app but you should still check the permission yourself in case the user has revoked permissions later on. 
 
 You should only need to check the permission when you need to access the SD card without first having to use one of the library pickers - you do not need to request permission yourself before starting one of the activities. 
+
+## Note About Android 10
+The library supports Android 10 but there has been some significant changes in how Android 
+handles storage access. 
+
+Android 10 now has scoped storage, that means the app should only have access to to its own app folder for storing and reading files and when the app is uninstalled
+these files are also removed. 
+
+If the library is running on pre Android 10 then the standard file picker will work in the normal way where any directory and file can be selected, devices running android 10
+If you are using a previous version of the FileDirectoryPicker (Pre 1.0.0.7) but are running on Android 10 (API Level 29) you will need to set the following in your application
+manifest. This will only be valid until the next major android release so this should be considered temporary. 
+```
+<application
+    android:requestLegacyExternalStorage="true"
+</application>
+```

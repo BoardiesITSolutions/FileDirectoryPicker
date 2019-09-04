@@ -2,10 +2,11 @@ package com.BoardiesITSolutions.FileDirectoryPicker;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Environment;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.ActionMode;
 import android.view.Menu;
@@ -195,7 +196,13 @@ public abstract class BasePicker extends AppCompatActivity implements IPermissio
 
     protected void retrieveDirectoryListing()
     {
-        currentPath = Environment.getExternalStorageDirectory().getPath();
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.P) {
+            currentPath = Environment.getExternalStorageDirectory().getPath();
+        }
+        else
+        {
+            currentPath = getExternalFilesDir(null).getPath();
+        }
 
         fileManager = new FileManager(this);
 
@@ -375,9 +382,11 @@ public abstract class BasePicker extends AppCompatActivity implements IPermissio
         }
         else
         {
-            String savePath = currentPath + "/" + txtFileName.getText().toString();
+            String savePath = currentPath;
+            String fileName = txtFileName.getText().toString();
             Intent intent = new Intent();
             intent.putExtra(SaveFilePicker.BUNDLE_SAVE_PATH, savePath);
+            intent.putExtra(SaveFilePicker.BUNDLE_SAVE_FILE, fileName);
             setResult(Activity.RESULT_OK, intent);
             finish();
         }

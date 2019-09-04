@@ -1,6 +1,7 @@
 package com.BoardiesITSolutions.FileExplorer.Logic;
 
 import android.content.Context;
+import android.os.Build;
 import android.os.Environment;
 import android.util.Log;
 
@@ -29,7 +30,13 @@ public class FileManager
      */
     public ArrayList<DirectoryOrFileInfo> getFilesAndDirectoryStructure()
     {
-        return getFilesAndDirectoryStructure(Environment.getExternalStorageDirectory().getPath());
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.P) {
+            return getFilesAndDirectoryStructure(Environment.getExternalStorageDirectory().getPath());
+        }
+        else
+        {
+            return getFilesAndDirectoryStructure(context.getExternalFilesDir(null).getPath());
+        }
     }
 
     /**
